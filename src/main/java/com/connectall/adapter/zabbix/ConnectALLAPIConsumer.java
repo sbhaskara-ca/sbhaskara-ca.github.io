@@ -17,6 +17,8 @@ public class ConnectALLAPIConsumer {
 	private final String CA_API_KEY = "";
 	private final String CA_BASE_URI = "http://localhost:8090";
 	private final String SAVE_RECORD_URI = "/connectall/api/2/postRecord";
+	
+	private final String TEST_VAL = "123";
 
 	private Properties caProperties;
 
