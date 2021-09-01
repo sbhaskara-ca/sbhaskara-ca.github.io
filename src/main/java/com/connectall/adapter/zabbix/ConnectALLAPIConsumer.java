@@ -48,6 +48,8 @@ public class ConnectALLAPIConsumer {
 		OutputStream os = con.getOutputStream();
 		os.write(input.getBytes());
 		os.flush();
+		
+		Thread.sleep(1000);
 
 		int responseCode = con.getResponseCode();
 		log.info("PostRecord API response code :: " + responseCode);
@@ -71,4 +73,10 @@ public class ConnectALLAPIConsumer {
 		return CA_BASE_URI + resourceUri;
 	}
 
+	
+	public static final ConnectALLAPIConsumer singleton() {
+		System.out.println("create new object");
+		return new ConnectALLAPIConsumer();
+	}
+	
 }

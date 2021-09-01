@@ -3,4 +3,6 @@ bin/
 dist/
 *.class
 *.jar
-
+.classpath
+.settings/
+.project
