@@ -5,6 +5,7 @@ public class CAEvent {
 	private ZabbixEvent fields;
 	private String appLinkName;
 	public ZabbixEvent getFields() {
+		System.out.println("hello);
 		return fields;
 	}
 	public void setFields(ZabbixEvent fields) {
